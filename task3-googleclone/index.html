@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔹 Navbar -->
+<div class="navbar">
+    <div>
+        <a href="#" onclick="navClick('about')">About</a>
+        <a href="#" onclick="navClick('store')">Store</a>
+    </div>
+
+    <div>
+        <a href="#" onclick="navClick('gmail')">Gmail</a>
+        <a href="#" onclick="navClick('images')">Images</a>
+        <button onclick="navClick('signin')">Sign in</button>
+    </div>
+</div>
+
+<!-- 🔹 Main -->
+<div class="container">
+
+    <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+
+    <!-- Search -->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <img src="https://img.icons8.com/material-outlined/20/search.png"/>
+
+            <input type="text" id="searchInput" placeholder="Search Google or type a URL">
+
+            <div class="icons">
+                <img id="mic" src="https://img.icons8.com/color/24/microphone.png"/>
+                <img src="https://img.icons8.com/color/24/google-lens.png"/>
+            </div>
+        </div>
+
+        <!-- Suggestions -->
+        <ul id="suggestions"></ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="search()">Google Search</button>
+        <button onclick="search()">I'm Feeling Lucky</button>
+    </div>
+
+    <!-- Languages -->
+    <p class="lang">
+        Google offered in:
+        <a href="#">తెలుగు</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">தமிழ்</a>
+        <a href="#">বাংলা</a>
+    </p>
+
+</div>
+
+<!-- 🔹 Footer -->
+<footer>
+    <div class="top">India</div>
+
+    <div class="bottom">
+        <div>
+            <span>Advertising</span>
+            <span>Business</span>
+            <span>How Search works</span>
+        </div>
+        <div>
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>Settings</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

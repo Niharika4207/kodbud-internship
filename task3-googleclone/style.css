@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.navbar a {
+    margin: 10px;
+    text-decoration: none;
+    color: #202124;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background: #1558c0;
+}
+
+/* Main */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+/* Search */
+.search-wrapper {
+    position: relative;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 580px;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    padding: 10px 15px;
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+}
+
+.search-box:hover {
+    box-shadow: 0 1px 8px rgba(32,33,36,0.35);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.icons img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Suggestions */
+#suggestions {
+    position: absolute;
+    top: 55px;
+    width: 580px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 20px 20px;
+    list-style: none;
+    z-index: 1000;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #f1f1f1;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    border: 1px solid #dadce0;
+}
+
+/* Footer */
+footer {
+    background: #f2f2f2;
+}
+
+.top {
+    padding: 10px 20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
